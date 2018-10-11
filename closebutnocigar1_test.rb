@@ -64,4 +64,3 @@ class My_test < Minitest::Test
 		bash_numbers = "1133557"
 		assert_equal(3, numbersoffbyhowmany(my_number, bash_numbers))
 	end
-end

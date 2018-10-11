@@ -36,5 +36,5 @@ end
 return count
 
 end
-numbersoffbyhowmany("1234","1235")
+# numbersoffbyhowmany("1234","1235")
 # winningnumbersoffbyone("1234", ["1233", "3333", "4444"])
