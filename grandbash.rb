@@ -29,11 +29,32 @@ def grand_bash(my_number, bash_numbers)
 		end
 		return arr1
 	end
-
+end
 	# arr1 = []
 	# if bash_numbers.include?(my_number)
 	# 	arr1<< my_number
 	# end
 	# arr1
-
+def offbyonenumber(my_number, bash_numbers)
+	counter = 0
+	x = 0
+	arr1 = []
+	my_number.each do |num|
+		bash_numbers.each do |bash|
+			num.length.times do
+				if bash[x] == num[x]
+						counter += 1
+					if counter == num.length - 1
+						arr1<< num
+						counter = 0
+					end	
+				end
+				x += 1
+			end
+		end
+	end
+	arr1.uniq!
+	p arr1
+	return arr1
 end
+offbyonenumber(["1234", "5678"],["1233", "5679"])
